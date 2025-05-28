@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Persona & User Story</title>
+  <style>
+    :root {
+      --calm-gold: #D4AF37;
+      --calm-purple: #8B5FBF;
+      --calm-blue: #4B0082;
+      --main-bg: radial-gradient(circle at top left, rgba(0, 0, 0, 0.9), rgba(28, 28, 28, 0.8), rgba(0, 0, 0, 0.9));
+      --glass-bg: rgba(255, 255, 255, 0.07);
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--main-bg);
+      color: #EEE;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      text-align: left;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin: 40px 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: linear-gradient(45deg, var(--calm-gold), var(--calm-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-top: 60px;
+      color: var(--calm-gold);
+    }
+
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+      backdrop-filter: blur(10px);
+      background: var(--glass-bg);
+      border-radius: 20px;
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      border: 2px solid var(--calm-gold);
+      border-radius: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    img:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 15px var(--calm-purple);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5em; }
+      .content-wrapper { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+    <h1>Persona & User Story</h1>
+
+    <h2>Persona</h2>
+    <p><strong>What is a Persona?</strong></p>
+    <p>
+      A persona is a fictional character that represents a typical user. It helps teams understand user needs, behaviors, motivations, and goals.
+    </p>
+    <img src="Persona.webp" alt="Persona" width="500" height="auto">
+
+    <p><strong>Why use Personas?</strong></p>
+    <ul>
+      <li>Create a shared understanding of the target users.</li>
+      <li>Help prioritize features and design decisions.</li>
+      <li>Keep the team focused on user goals and perspectives.</li>
+      <li>Increase empathy within the team toward real users.</li>
+    </ul>
+
+    <p><strong>Key Characteristics:</strong></p>
+    <ul>
+      <li>Fictional, yet realistic and based on research.</li>
+      <li>Include demographics, behaviors, motivations, and pain points.</li>
+      <li>Serve as reference points throughout the design process.</li>
+    </ul>
+
+    <p><strong>Limitations:</strong></p>
+    <ul>
+      <li>Only as good as the data they're based on.</li>
+      <li>Overgeneralization may lead to stereotypes.</li>
+      <li>Must be regularly updated to remain relevant.</li>
+    </ul>
+
+    <h2>User Story</h2>
+    <p><strong>What is a User Story?</strong></p>
+    <p>
+      A user story is a short, simple description of a feature told from the perspective of the person who desires the new capability. It typically follows this format:
+    </p>
+
+    <img src="UserStory.webp" alt="UserStory" width="500" height="auto">
+
+    <blockquote><em>“As a [type of user], I want [some goal] so that [some reason].”</em></blockquote>
+
+    <p><strong>Why use User Stories?</strong></p>
+    <ul>
+      <li>Clearly express user needs and expectations.</li>
+      <li>Encourage collaboration between business and technical teams.</li>
+      <li>Help prioritize tasks in agile development environments.</li>
+    </ul>
+
+    <p><strong>Characteristics of a Good User Story (INVEST):</strong></p>
+    <ul>
+      <li><strong>Independent</strong> – can be developed separately.</li>
+      <li><strong>Negotiable</strong> – not a fixed contract; open for discussion.</li>
+      <li><strong>Valuable</strong> – delivers value to the user.</li>
+      <li><strong>Estimable</strong> – can be estimated for planning.</li>
+      <li><strong>Small</strong> – sized to fit into a single sprint.</li>
+      <li><strong>Testable</strong> – clear criteria to determine if it's complete.</li>
+    </ul>
+
+    <p><strong>Example:</strong></p>
+    <p><em>“As a user, I want to save my favorite products so I can easily find them later.”</em></p>
+</body>
+</html>
